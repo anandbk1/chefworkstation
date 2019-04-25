@@ -1,0 +1,1000 @@
+  471  mkdir project
+  472  cd project
+  473  cd ..
+  474  rmdir project
+  475  ls
+  476  cp -R mycookbook project
+  477  cd project
+  478  ls
+  479  cd recipes
+  480  ls
+  481  vi default.rb
+  482  ls
+  483  vi default1.rb
+  484  mv default.rb default2.rb
+  485  mv default1.rb default.rb
+  486  ls
+  487  vi default.rb
+  488  cd ..
+  489  ls
+  490  cd ..
+  491  ls
+  492  cd sample
+  493  ls
+  494  cd recipes
+  495  ls
+  496  cat default.rb
+  497  cd ..
+  498  ls
+  499  cp -R project
+  500  rmdir -R project
+  501  ls
+  502  rmdir project
+  503  rmdir -R project
+  504  rmdir-R project
+  505  rmdir project
+  506  rm -R project
+  507  ls
+  508  cd mycookbook
+  509  ls
+  510  cd ..
+  511  knife cookbook upload mycookbook
+  512  cd ..
+  513  ls
+  514  cd cookbooks
+  515  cd ..
+  516  ls
+  517  cd cookbooks
+  518  ls
+  519  cd sample
+  520  cd ..
+  521  ls
+  522  cd ..
+  523  knife cookbook delete apachebook
+  524  cd cookbooks
+  525  ls
+  526  cd mycookbook
+  527  ls
+  528  cd recipes
+  529  ls
+  530  cat default.rb
+  531  cat default2.rb
+  532  cat default1.rb
+  533  ls
+  534  cd ..
+  535  ls
+  536  cd ..
+  537  ls
+  538  cd sample
+  539  ls
+  540  cd recipes
+  541  ls
+  542  rm default.rb
+  543  vi default.rb
+  544  ls
+  545  git init
+  546  git clone https://github.com/opthakur/chef-wordpress.git
+  547  ls
+  548  cd chef-wordpress
+  549  ls
+  550  cd recipes
+  551  ls
+  552  vi default.rb
+  553  ls
+  554  cd ..
+  555  ls
+  556  cd ..
+  557  ls
+  558  cd ..
+  559  ls
+  560  cd recipes
+  561  ls
+  562  cp chef-wordpress/recipes/default.rb default.rb
+  563  ls
+  564  rm -R chef-wordpress
+  565  ls
+  566  cd ..
+  567  ls
+  568  vi metadata.rb
+  569  ls
+  570  cd ..
+  571  ls
+  572  cd ..
+  573  ls
+  574  knife cookbook upload sample
+  575  ls
+  576  cd cookbooks
+  577  ls
+  578  cd sample
+  579  ls
+  580  cd recipes
+  581  ls
+  582  vi default.rb
+  583  ls
+  584  vi default.rb
+  585  cat default.rb
+  586  ls
+  587  mv default.rb default1.rb
+  588  ls
+  589  vi default.rb
+  590  cd ..
+  591  ls
+  592  cd ..
+  593  ls
+  594  cd ..
+  595  knife cookbook upload sample
+  596  vi cookbooks/sample/recipes/default.rb
+  597  cp cookbooks/sample/recipes/default.rb cookbooks/sample/recipes/default_v1.rb
+  598  vi cookbooks/sample/recipes/default.rb
+  599  knife cookbook upload sample
+  600  exit
+  601  ls
+  602  cd chef-repo
+  603  clear
+  604  ls cookbooks/sample/recipes/
+  605  vi default.rb
+  606  ls cookbooks/sample/recipes/
+  607  cat cookbooks/sample/recipes/default.rb
+  608  cat cookbooks/sample/recipes/default1.rb
+  609  cat cookbooks/sample/recipes/default.rb
+  610  clear
+  611  cat cookbooks/sample/recipes/default.rb
+  612  mv cookbooks/sample/recipes/default.rb cookbooks/sample/recipes/defaultv2.rb
+  613  vi cookbooks/sample/recipes/default.rb
+  614  clear
+  615  vi cookbooks/sample/recipes/defaultv2.rb
+  616  vi cookbooks/sample/recipes/defaultv.rb
+  617  knife cookbook upload sample
+  618  vi cookbooks/sample/recipes/defaultv.rb
+  619  mv cookbooks/sample/recipes/defaultv.rb cookbooks/sample/recipes/default.rb
+  620  knife cookbook upload sample
+  621  ls
+  622  ls -lrta
+  623  cd mycookbooks
+  624  ls
+  625  cd cookbooks
+  626  ls
+  627  cd ..
+  628  git remote -v
+  629  git status
+  630  ls -lrta
+  631  ls
+  632  cd cookbooks
+  633  ls
+  634  cd sample
+  635  ls
+  636  cd recipes
+  637  ls
+  638  ls -lrta
+  639  git remote -v
+  640  history
+  641  ls
+  642  vi default1.rb
+  643  ls
+  644  rm default.rb
+  645  mv default1.rb default.rb
+  646  cd .
+  647  cd ..
+  648  ls
+  649  knife cookbook upload sample
+  650  vi cookbooks/sample/recipes/defaultv.rb
+  651  vi cookbooks/sample/recipes/default.rb
+  652  knife cookbook upload sample
+  653  ip a
+  654  cat cookbooks/sample/recipes/default.rb
+  655  cd /var/www/
+  656  ls
+  657  cd html
+  658  ls
+  659  cd ~/chef-repo
+  660  ls
+  661  knife cookbook upload sample
+  662  vi cookbooks/sample/recipes/default.rb
+  663  exit
+  664  pwd
+  665  cd chef-repo
+  666  cd cookbooks
+  667  ls
+  668  cd sample
+  669  ls
+  670  cd recipes
+  671  vi default.rb
+  672  cd ..
+  673  ls
+  674  cd ..
+  675  knife cookbook create sample1
+  676  exit
+  677  cd chef-repo
+  678  ls
+  679  cd cookbooks
+  680  ls
+  681  cd sample
+  682  ls
+  683  cd recipes
+  684  ls -lrta
+  685  git remote -v
+  686  ls
+  687  la -lrta
+  688  git branch
+  689  git status
+  690  git fetch
+  691  history
+  692  git pull
+  693  history > log.txt
+  694  grep log.txt clone
+  695  grep log.txt git
+  696  grep knife log.txt
+  697  grep clone log.txt
+  698  git remote add origin https://github.com/opthakur/chef-wordpress.git
+  699  git fetch
+  700  git status
+  701  ls
+  702  ls -lrta
+  703  git add .
+  704  git status
+  705  cd ..
+  706  ls
+  707  git clone https://github.com/opthakur/chef-wordpress/
+  708  ls -lrta
+  709  cd recipes
+  710  ls
+  711  cd ..
+  712  ls
+  713  cd chef-wordpress
+  714  ls
+  715  cd recipes
+  716  ls
+  717  pwd
+  718  cd ~/chef-repo
+  719  ls
+  720  cd cookbooks
+  721  ls
+  722  cd sample
+  723  ls
+  724  cd recipes
+  725  ls
+  726  rm *.rb
+  727  cp /root/chef-repo/cookbooks/sample/chef-wordpress/recipes/default.rb default.rb
+  728  ls
+  729  cd ..
+  730  ls
+  731  cd ..
+  732  knife cookbook upload sample
+  733  catcat cookbooks/sample/chef-wordpress/recipes/default.rb
+  734  cat cookbooks/sample/chef-wordpress/recipes/default.rb
+  735  exit
+  736  knife cookbook upload starter
+  737  pwd
+  738  cd chef-repo
+  739  cd cookbooks
+  740  ls
+  741  cd starter
+  742  ls
+  743  cd recipes
+  744  ls
+  745  cat default.rb
+  746  cd ..
+  747  ls
+  748  cd sample
+  749  ls
+  750  cd ..
+  751  ls
+  752  cd cookbooks
+  753  ls
+  754  cd sample
+  755  ls
+  756  vi metadata.rb
+  757  knife cookbook upload sample
+  758  ls
+  759  cd recipes
+  760  ls
+  761  cat default.rb
+  762  vi default.rb
+  763  cd ..
+  764  ls
+  765  cd ..
+  766  knife cookbook upload sample
+  767  cd cookbooks
+  768  ls
+  769  cd sample
+  770  cd recipes
+  771  ls
+  772  vi default.rb
+  773  cd ..
+  774  ls
+  775  knife cookbook upload sample
+  776  ls -lrta
+  777  find latest.zip
+  778  locate latest.zip
+  779  ls
+  780  cd cookbooks
+  781  ls
+  782  cd apachebook
+  783  ls
+  784  cd recipes
+  785  ls
+  786  cat default.rb
+  787  cd ..
+  788  ls
+  789  cd mycookbook
+  790  ls
+  791  cd recipes
+  792  ls
+  793  cat default.rb
+  794  cat default1.rb
+  795  cd ..
+  796  ls
+  797  cd files
+  798  ls
+  799  cd default
+  800  ls
+  801  cd ..
+  802  ls
+  803  cd ..
+  804  ls
+  805  cd starter
+  806  ls
+  807  cd recipes
+  808  ls
+  809  cat default.rb
+  810  cd ..
+  811  ls
+  812  cd ..
+  813  ls
+  814  cd ..
+  815  grep "Hello World!" *
+  816  grep "Hello World!" *.*
+  817  grep "My first PHP" *.*
+  818  cd cookbooks
+  819  grep "My first PHP" *.*
+  820  grep "My first PHP" /
+  821  grep "My first PHP" /cookbooks
+  822  grep -i "My first PHP" /cookbooks
+  823  grep -i "My first PHP" 
+  824  grep -i "My first PHP"
+  825  ls
+  826  cd sample
+  827  ls
+  828  cd recipes
+  829  ls
+  830  cat default.rb
+  831  vi default.rb
+  832  cd ..
+  833  knife cookbook upload sample
+  834  ip a
+  835  grep "My first PHP page" /cookbooks
+  836  pwd
+  837  grep "My first PHP page" /root/chef-repo
+  838  grep "My first PHP page" /root/chef-repo/
+  839  grep "My first PHP page" /root/chef-repo/*.*
+  840  grep "apache2" /root/chef-repo/*.*
+  841  grep "apache" /root/chef-repo/*.*
+  842  locate "apache" /root/chef-repo/*.*
+  843  grep "apache" -r /root/chef-repo/*.*
+  844  grep -r "apache" /root/chef-repo/*.*
+  845  grep -r "apache" /root/chef-repo/*
+  846  grep -r "My first PHP page" /root/chef-repo/*
+  847  cd ..
+  848  grep -r "My first PHP page" /root/*
+  849  cd /var/html
+  850  exit
+  851  cd chef-repo
+  852  cd cookbooks
+  853  cd sample
+  854  cd recipes
+  855  vi default.rb
+  856  cd /
+  857  ls
+  858  cd home
+  859  ls
+  860  cd vagrant
+  861  ls
+  862  cd ..
+  863  cd ubuntu
+  864  ls
+  865  ls -lrta
+  866  cd ..
+  867  ls
+  868  cd ..
+  869  ls
+  870  cd usr
+  871  ls
+  872  cd share
+  873  ls
+  874  cd file
+  875  ls
+  876  cd ..
+  877  ls
+  878  cd ..
+  879  ls
+  880  cd local
+  881  ls
+  882  cd ..
+  883  ls
+  884  cd mnt
+  885  ls
+  886  cd ..
+  887  cd root
+  888  ls
+  889  ls -lrta
+  890  cd ..
+  891  ls
+  892  cd /root
+  893  pwd
+  894  ls
+  895  ls -lrta
+  896  cd data
+  897  cd /
+  898  pwd
+  899  cd root
+  900  ls
+  901  cd /
+  902  ls
+  903  cd vagrabt
+  904  cd vagrant
+  905  ls
+  906  pwd
+  907  cd data
+  908  ls
+  909  cd ..
+  910  ls
+  911  pwd
+  912  cd ..
+  913  ls
+  914  cd ..
+  915  ls
+  916  cd ..
+  917  pwd
+  918  cd chef-repo
+  919  cd root
+  920  cd chef-repo
+  921  clear
+  922  knife cook create getgrave
+  923  knife cookbook create getgrave
+  924  knife generate cookbook  getgrave
+  925  chef generate cookbook  getgrave
+  926  cd cookbooks
+  927  ls
+  928  cd ..
+  929  ls
+  930  cd cookbooks
+  931  chef generate cookbook  getgrave
+  932  cd getgrave
+  933  ls
+  934  vi metadata.rb
+  935  cd recipes
+  936  ls
+  937  vi default.rb
+  938  cd ..
+  939  ls
+  940  cd ..
+  941  ls
+  942  rm -R getgrave
+  943  ls 
+  944  knife cookbook upload getgrave
+  945  cd cookbooks
+  946  ls
+  947  cd getgrave
+  948  ls
+  949  cd recipes
+  950  ls
+  951  vi default.rb
+  952  cd ..
+  953  ls
+  954  cd ..
+  955  ls
+  956  knife cookbook upload getgrave
+  957  ls
+  958  cd cookbooks
+  959  ls
+  960  cd getgrave
+  961  cd recipes
+  962  vi default.rb
+  963  cd ..
+  964  knife cookbook upload getgrave
+  965  cd cookbooks
+  966  cd getgrave
+  967  cd recipes
+  968  vi default.rb
+  969  cd ..
+  970  knife cookbook upload getgrave
+  971  cd cookbooks
+  972  cd getgrave
+  973  cd recipes
+  974  vi default.rb
+  975  ls
+  976  cd ..
+  977  ls
+  978  cd sample
+  979  ls
+  980  cd recipes
+  981  ls
+  982  vi default.rb
+  983  cd ..
+  984  ls
+  985  cd getgrave
+  986  ls
+  987  cd recipes
+  988  ls
+  989  vi default.rb
+  990  cd ..
+  991  ls
+  992  cd sample
+  993  cd recipes
+  994  ls
+  995  vi default.rb
+  996  cd ..
+  997  ls
+  998  cd getgrave
+  999  ls
+ 1000  cd recipes
+ 1001  ls
+ 1002  vi default.rb
+ 1003  cd ..
+ 1004  ls
+ 1005  cd ..
+ 1006  knife cookbook upload getgrave
+ 1007  cd cookbooks
+ 1008  ls
+ 1009  cd getgrav
+ 1010  ls
+ 1011  cd getgrav
+ 1012  ls
+ 1013  cd getgrave
+ 1014  ls
+ 1015  cd recipes
+ 1016  ls
+ 1017  vi default.rb
+ 1018  cd ..
+ 1019  ls
+ 1020  knife cookbook upload getgrave
+ 1021  cd cookbooks
+ 1022  ls
+ 1023  cd getgrave
+ 1024  ls
+ 1025  cd recipes
+ 1026  ls
+ 1027  vi default.rb
+ 1028  cd ..
+ 1029  knife cookbook upload getgrave
+ 1030  cd cookbooks
+ 1031  ls
+ 1032  cd getgrave
+ 1033  ls
+ 1034  cd recipes
+ 1035  vi default.rb
+ 1036  cd ..
+ 1037  ls
+ 1038  cd ..
+ 1039  ls
+ 1040  knife cookbook upload getgrave
+ 1041  ls
+ 1042  history
+ 1043  cd cookbooks/getgrav/recipes
+ 1044  ls
+ 1045  cd cookbooks
+ 1046  ls
+ 1047  cd getgrave
+ 1048  ls
+ 1049  cd recipes
+ 1050  ls
+ 1051  cat default.rb
+ 1052  ip a
+ 1053  exit
+ 1054  cd chef-repo
+ 1055  cd cookbooks
+ 1056  ls
+ 1057  cd sample
+ 1058  ls
+ 1059  cd recipes
+ 1060  ls
+ 1061  vi default.rb
+ 1062  clear
+ 1063  cat default.rb
+ 1064  wget https://gitlab.com/roybhaskar9/devops/raw/master/coding/chef/chefwordpress/files/default/mysqlcommands
+ 1065  ls
+ 1066  cd ..
+ 1067  ls
+ 1068  cd recipes
+ 1069  ls
+ 1070  vi default.rb
+ 1071  ls recipes
+ 1072  ls
+ 1073  exit
+ 1074  cd chef-repo
+ 1075  ls
+ 1076  cd cookbooks
+ 1077  ls
+ 1078  cd sample
+ 1079  ls
+ 1080  mkdir recipes
+ 1081  ls
+ 1082  mkdir files
+ 1083  ls
+ 1084  cd recipes
+ 1085  ls
+ 1086  vi default.rb
+ 1087  history
+ 1088  vi default.rb
+ 1089  ls
+ 1090  cd files
+ 1091  cd ..
+ 1092  ls
+ 1093  cd recipes
+ 1094  ls
+ 1095  mv mysqlcommands ~/chef-repo/cookbooks/sample/files
+ 1096  mv wp-config-sample.php ~/chef-repo/cookbooks/sample/files/
+ 1097  cd ..
+ 1098  cd files
+ 1099  ls
+ 1100  cd ..
+ 1101  cd recipes
+ 1102  vi default.rb
+ 1103  history
+ 1104  cd ..
+ 1105  ls
+ 1106  cd files
+ 1107  ls
+ 1108  wget https://wordpress.org/latest.zip
+ 1109  ls
+ 1110  cd ..
+ 1111  cd recipes
+ 1112  vi default.rb
+ 1113  cd ..
+ 1114  knife cookbook upload sample
+ 1115  cd cookbooks
+ 1116  ls
+ 1117  cd ..
+ 1118  ls
+ 1119  knife cookbook upload sample
+ 1120  cd cookbooks
+ 1121  cd sample
+ 1122  cd recipes
+ 1123  vi default.rb
+ 1124  cd ..
+ 1125  knife cookbook upload sample
+ 1126  cd cookbooks
+ 1127  cd recipes
+ 1128  cd sample
+ 1129  vi recipes/default.rb
+ 1130  exit
+ 1131  ls
+ 1132  cd chef-repo
+ 1133  ls
+ 1134  cd ..
+ 1135  ls
+ 1136  cd chef-repo
+ 1137  ls
+ 1138  cd cookbooks
+ 1139  ls
+ 1140  cd sample
+ 1141  ls
+ 1142  cd chef-wordpress
+ 1143  ls
+ 1144  cd recipes
+ 1145  ls
+ 1146  cp default.rb ~/chef-repo/cookbooks/sample/recipes/default1.rb
+ 1147  cd ~/chef-repo/cookbooks/sample/
+ 1148  cd recipes
+ 1149  ls
+ 1150  mv default.rb default2.rb
+ 1151  mv default1.rb default.rb
+ 1152  vi default.rb
+ 1153  vi default1.rb
+ 1154  ls
+ 1155  vi default2.rb
+ 1156  vi default1.rb
+ 1157  vi default.rb
+ 1158  knife cookbook upload sample
+ 1159  vi default.rb
+ 1160  cd files
+ 1161  vi default.rb
+ 1162  cd ..
+ 1163  ls
+ 1164  cd files
+ 1165  ls
+ 1166  cd ..
+ 1167  ls
+ 1168  vi metadata.rb
+ 1169  cd recipes
+ 1170  ls
+ 1171  knife cookbook upload sample
+ 1172  chef apply
+ 1173  chef-apply default.rb
+ 1174  clear
+ 1175  chef-apply default.rb
+ 1176  cd ..
+ 1177  cd files
+ 1178  ls
+ 1179  cd ..
+ 1180  cd recipes
+ 1181  vi default.rb
+ 1182  chef-solo
+ 1183  clear
+ 1184  chef-solo -o 'recipe[sample]'
+ 1185  cd ~/chef-repo
+ 1186  vi solo.rb
+ 1187  chef-solo -o 'recipe[sample]' -c solo.rb
+ 1188  vi solo.rb
+ 1189  chef-solo -o 'recipe[sample]' -c solo.rb
+ 1190  vi solo.rb
+ 1191  chef-solo -o 'recipe[sample]' -c solo.rb
+ 1192  vi solo.rb
+ 1193  chef-solo -o 'recipe[sample]' -c solo.rb
+ 1194  clear
+ 1195  knife cookbook upload sample
+ 1196  cd cookbooks/sample/files
+ 1197  ls
+ 1198  knife cookbook upload sample -v
+ 1199  knife cookbook upload sample -V
+ 1200  knife cookbook upload sample -VV
+ 1201  cd ..
+ 1202  cd recipes
+ 1203  vi metadata.rb
+ 1204  ls
+ 1205  cd ..
+ 1206  ls
+ 1207  vi metadata.rb
+ 1208  ls
+ 1209  cd recipes
+ 1210  ls
+ 1211  rm default2.rb
+ 1212  rm log.txt
+ 1213  knife cookbook upload sample -VV
+ 1214  knife cookbook upload sample
+ 1215  vi default.rb
+ 1216  ls
+ 1217  cd ..
+ 1218  ls
+ 1219  cd ..
+ 1220  ls
+ 1221  git init
+ 1222  git add README.md
+ 1223  git commit -m "first commit"
+ 1224  git remote add origin https://github.com/anandbk1/chef.git
+ 1225  ls
+ 1226  git add -a
+ 1227  git add -A
+ 1228  git commit -m "upload"
+ 1229  git push -u origin master
+ 1230  exit
+ 1231  cd /etc/chef
+ 1232  ls
+ 1233  cd ..
+ 1234  ~cd /
+ 1235  cd /root
+ 1236  ls
+ 1237  cd /root
+ 1238  ls
+ 1239  cd /home
+ 1240  ls
+ 1241  cd vagrant
+ 1242  ls
+ 1243  ls ..
+ 1244  cd ..
+ 1245  cd ubuntu
+ 1246  ls
+ 1247  ls -lrta
+ 1248  cd /vagrant
+ 1249  ls
+ 1250  exit
+ 1251  history
+ 1252  cd /etc/hosts
+ 1253  ls
+ 1254  cd /etc
+ 1255  ls
+ 1256  ls host
+ 1257  ls host*
+ 1258  cd hosts
+ 1259  ls
+ 1260  vi hosts
+ 1261  cd /vagrant
+ 1262  ls
+ 1263  cat Vagrantfile
+ 1264  cd /
+ 1265  cd ~/chef-repo
+ 1266  ls
+ 1267  exit
+ 1268  clear
+ 1269  vi /etc/hosts
+ 1270  reboot
+ 1271  clear
+ 1272  hostname
+ 1273  cd chef-repo
+ 1274  ls
+ 1275  knife bootstrap 192.168.33.13 -x vagrant -P vagrant --sudo -N node2
+ 1276  history
+ 1277  clear
+ 1278  history
+ 1279  ls
+ 1280  cd cookbooks
+ 1281  ls
+ 1282  cd sample
+ 1283  ls
+ 1284  cd files
+ 1285  ls
+ 1286  vi wp-config-sample.php
+ 1287  knife cookbook upload sample
+ 1288  vi wp-config-sample.php
+ 1289  cd ..
+ 1290  ls
+ 1291  pwd
+ 1292  cd sample
+ 1293  ls
+ 1294  ls -lrta
+ 1295  cd ..
+ 1296  ls
+ 1297  ls -lrta
+ 1298  git add .
+ 1299  git commit -m "recent changes"
+ 1300  git push -u origin master
+ 1301  exit
+ 1302  cd chef-repo
+ 1303  chef generate cookbook template-example
+ 1304  cd cookbooks
+ 1305  cd 
+ 1306  cd recipes
+ 1307  ls
+ 1308  cd chef-repo
+ 1309  ls
+ 1310  cd cookbooks
+ 1311  ls
+ 1312  cd ..
+ 1313  ls
+ 1314  cd template-example
+ 1315  cd recipes
+ 1316  ls
+ 1317  vi default.rb
+ 1318  cd ..
+ 1319  cd sample
+ 1320  cd files
+ 1321  ls
+ 1322  cd sample
+ 1323  ls
+ 1324  cd cookbooks
+ 1325  ls
+ 1326  cd sample
+ 1327  ls
+ 1328  cd files
+ 1329  ls
+ 1330  vi wp-config-sample.php
+ 1331  exit
+ 1332  cd chef-repo
+ 1333  history
+ 1334  ls
+ 1335  cd cookbooks
+ 1336  ls
+ 1337  cd template-example
+ 1338  ls
+ 1339  cd template-example
+ 1340  ls 
+ 1341  cd ..
+ 1342  ls
+ 1343  cd cookbooks
+ 1344  ls
+ 1345  cd ..
+ 1346  rm -r template-example
+ 1347  cd coobooks
+ 1348  ls
+ 1349  cd cookbooks
+ 1350  clear
+ 1351  ls
+ 1352  chef generate cookbook template-example
+ 1353  ls
+ 1354  cd template-example
+ 1355  ls
+ 1356  cd recipes
+ 1357  ls
+ 1358  vi default.rb
+ 1359  ls
+ 1360  cd ..
+ 1361  ls
+ 1362  mkdir templates
+ 1363  cd templates
+ 1364  ls
+ 1365  mkdir default
+ 1366  cd default
+ 1367  vi sample.erb
+ 1368  ls
+ 1369  cd ..
+ 1370  ls
+ 1371  cd ..
+ 1372  ls
+ 1373  cd ..
+ 1374  ls
+ 1375  clear
+ 1376  cd ..
+ 1377  knife cookbook upload template-example
+ 1378  knife supermarket install nginx
+ 1379  cd cookbooks
+ 1380  git init
+ 1381  cd ..
+ 1382  knife supermarket install nginx
+ 1383  cd coobbooks
+ 1384  ls
+ 1385  cd cookbooks
+ 1386  ls
+ 1387  git status
+ 1388  git add .
+ 1389  git commit -m "template example"
+ 1390  cd ..
+ 1391  ls
+ 1392  knife supermarket install nginx
+ 1393  cd cookbooks
+ 1394  git push -u origin master
+ 1395  cd ..
+ 1396  ls
+ 1397  knife supermarket install nginx
+ 1398  cd cookbooks
+ 1399  git status
+ 1400  git add .
+ 1401  ls
+ 1402  git status
+ 1403  git add -A
+ 1404  git status
+ 1405  git commit -m "getgrave"
+ 1406  git stash getgrave
+ 1407  git add -A
+ 1408  git stash getgrave
+ 1409  git commit -a -m "comment"
+ 1410  cd getgrave
+ 1411  ls
+ 1412  cd ..
+ 1413  ls
+ 1414  mv getgrave getfrave1
+ 1415  git status
+ 1416  git add -A
+ 1417  git commit -a -m "comment"
+ 1418  git push -u origin master
+ 1419  ls
+ 1420  cd ..
+ 1421  knife supermarket install nginx
+ 1422  cd cookbooks
+ 1423  ls
+ 1424  git status
+ 1425  exit
+ 1426  history
+ 1427  cd chef-repo
+ 1428  ls
+ 1429  knife supermarket install nginx
+ 1430  cd cookbooks
+ 1431  ls
+ 1432  git status
+ 1433  rm -r getfravel
+ 1434  ls
+ 1435  rm -r getfrave1
+ 1436  git status
+ 1437  git add .
+ 1438  git commit -m "test"
+ 1439  git push -u origin master
+ 1440  knife supermarket install nginx
+ 1441  exit
+ 1442  cd chef-repo
+ 1443  ls
+ 1444  git remote -v
+ 1445  git init
+ 1446  git add .
+ 1447  git commit -m "chefworkstation code"
+ 1448  git remote add origin git@github.com:anandbk1/chefworkstation.git
+ 1449  git push -u origin master
+ 1450  git remote rm origin
+ 1451  git remote add origin https://github.com/anandbk1/chefworkstation.git
+ 1452  git push -u origin master
+ 1453  cd /etc/.ssh
+ 1454  cd /etc
+ 1455  ls
+ 1456  cd ssh
+ 1457  ls
+ 1458  cat ssh_host_rsa_key.pub
+ 1459  cd /
+ 1460  cd chef-repo
+ 1461  cd ~
+ 1462  cd chef-repo
+ 1463  git remote rm origin
+ 1464  git remote add origin git@github.com:anandbk1/chefworkstation.git
+ 1465  git push -u origin master
+ 1466  sudo git push -u origin master
+ 1467  git remote rm origin
+ 1468  git remote add origin https://github.com/anandbk1/chefworkstation.git
+ 1469  sudo git push -u origin master
+ 1470  history > history.txt
