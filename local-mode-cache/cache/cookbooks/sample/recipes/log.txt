@@ -1,0 +1,693 @@
+    1  sudo curl -sSL https://gitlab.com/roybhaskar9/devops/raw/master/coding/chef/setupchefws.sh | sh
+    2  ls
+    3  cd chef-repo
+    4  knife bootstrap 192.168.33.11 -x vagrant -P vagrant --sudo -N node1
+    5  exit
+    6  la a
+    7  ls a
+    8  la -a
+    9  cd .chef
+   10  cd chef-repo
+   11  ls
+   12  la -a
+   13  cd .chef
+   14  ls
+   15  vi knife.rb
+   16  ls
+   17  cd ..
+   18  ls
+   19  cd cookbooks
+   20  ls
+   21  cd starter
+   22  ls
+   23  vi default.rb
+   24  ls
+   25  cd recipes
+   26  ls
+   27  vi default.rb
+   28  cd ..
+   29  ls
+   30  cd attributes
+   31  ls
+   32  vi default.rb
+   33  cd ~/chef-repo
+   34  ls
+   35  knife cookbooks upload starter
+   36  ~ls
+   37  ls
+   38  cd cookbooks
+   39  ls
+   40  cd ..
+   41  ls
+   42  knife cookbook upload starter
+   43  ls
+   44  cd cookbooks
+   45  ls
+   46  cp -R starter mycookbook
+   47  ls
+   48  cd mycookbook
+   49  ls
+   50  vi metadata.rb
+   51  ls
+   52  rm -rf attributes files templates
+   53  ls
+   54  cd recipes
+   55  ls
+   56  rm -f default.rb
+   57  ls
+   58  touch default.rb
+   59  vi default.rb
+   60  cd ~/chef-repo
+   61  ls
+   62  knife cookbook upload mycookbook
+   63  exit
+   64  pwd
+   65  ls
+   66  cd chef-repo
+   67  ls
+   68  cd cookbooks
+   69  ls
+   70  cp -R mycookbook apachebook
+   71  cd apachebook
+   72  ls
+   73  vi metadata.rb
+   74  cat metadata.rb
+   75  cd recipes
+   76  ls
+   77  rm -f default.rb
+   78  touch default.rb
+   79  ls
+   80  vi default.rb
+   81  cd ~/chef-repo
+   82  ls
+   83  knife cookbook upload apachebook
+   84  cd cookbooks
+   85  cd apachebook
+   86  ls
+   87  cd recipes
+   88  ls
+   89  rm -f default.rb
+   90  touch default.rb
+   91  vi default.rb
+   92  cat default.rb
+   93  cd ~/chef-repo
+   94  knife cookbook upload apachebook
+   95  cd cookbooks/apachebook/recipes
+   96  ls
+   97  cat default.rb
+   98  exit
+   99  ls
+  100  cd chef-repo
+  101  ls
+  102  cd cookbooks
+  103  ls
+  104  cd apachebook
+  105  ls
+  106  cd recipes
+  107  ls
+  108  cat default.rb
+  109  exit
+  110  cd chef-repo
+  111  ls
+  112  cd cookbooks
+  113  ls
+  114  cd mycookbook
+  115  ls
+  116  cd recipes
+  117  ls
+  118  vi default.rb
+  119  cat default.rb
+  120  cd ~/chef-repo
+  121  knife cookbook upload mycookbook
+  122  service apache2 status
+  123  cd cookbooks
+  124  ls
+  125  cd mycookbook
+  126  ls
+  127  cd recipes
+  128  vi default.rb
+  129  cd ~/chef-repo
+  130  ls
+  131  knife cookbook upload mycookbook
+  132  cat /cookbooks/mycookbook/recipes/default.rb
+  133  ls
+  134  cat cookbooks/mycookbook/recipes/default.rb
+  135  cd cookbools
+  136  cd cookbooks
+  137  cd mycookbook
+  138  ls
+  139  cd recipes
+  140  ls
+  141  vi default.rb
+  142  cd ~/chefrepo
+  143  cd ~/chef-repo
+  144  knife cookbook upload mycookbook
+  145  cat cookbooks/mycookbook/recipes/default.rb
+  146  knife cookbook upload mycookbook
+  147  exit
+  148  cd chef-repo
+  149  cd cookbooks
+  150  cd mycookbook
+  151  ls
+  152  vi default.rb
+  153  ls
+  154  cd recipes
+  155  ls
+  156  pwd
+  157  ls
+  158  cd ..
+  159  ls
+  160  vi metadata.rb
+  161  ls
+  162  cd recipes
+  163  ls
+  164  vi default.rb
+  165  cd ~/chef-repo
+  166  knide cookbook upload mycookbook
+  167  knife cookbook upload mycookbook
+  168  cat /chef-repo/cookbooks/mycookbook/recipes/default.rb
+  169  cd /chef-repo/cookbooks/mycookbook/recipes
+  170  ls
+  171  cd cookbooks
+  172  ls
+  173  cd mycookbook
+  174  ls
+  175  cd recipes
+  176  vi default.rb
+  177  cd ~/chef-repo
+  178  knife cookbook upload mycookbook
+  179  cd cookbooks
+  180  ls
+  181  cd mycookbook
+  182  ls
+  183  cd recipes
+  184  ls
+  185  vi default.rb
+  186  cd ~/chef-repo
+  187  knife cookbook upload mycookbook
+  188  exit
+  189  vi cd cookbooks/mycookbook/recipes/default.rb
+  190  vi cookbooks/mycookbook/recipes/default.rb
+  191  cd  cookbooks/mycookbook/recipes/
+  192  ls
+  193  cd chef-repo
+  194  cd  cookbooks/mycookbook/recipes/
+  195  ls
+  196  cd ~/chef-repo
+  197  vi cookbooks/mycookbook/recipes/default.rb
+  198  cp cookbooks/mycookbook/recipes/default.rb cookbooks/mycookbook/recipes/default1.rb
+  199  vi cookbooks/mycookbook/recipes/default.rb
+  200  knife cookbook upload mycookbook
+  201  vi cookbooks/mycookbook/recipes/default.rb
+  202  knife cookbook upload mycookbook
+  203  vi cookbooks/mycookbook/recipes/default.rb
+  204  knife cookbook upload mycookbook
+  205  ssh 192.168.1.4
+  206  ls
+  207  cd cookbooks/mycookbook
+  208  ls
+  209  vi index.php
+  210  cd ~/chef-repo
+  211  knife cookbook upload mycookbook
+  212  cd /files
+  213  ls
+  214  cd /
+  215  ls
+  216  cd home
+  217  ls
+  218  cd ubuntu
+  219  ls
+  220  cd vagrant
+  221  ls
+  222  cd ..
+  223  cd vagrant
+  224  ls
+  225  cd ..
+  226  ls
+  227  cd usr
+  228  ls
+  229  cd local
+  230  ls
+  231  cd share
+  232  ls
+  233  cd ..
+  234  ls
+  235  cd ..
+  236  ls
+  237  cd chef-repo
+  238  ls
+  239  cd /
+  240  ls
+  241  cd ~/chef-repo
+  242  ls
+  243  cd cookbooks
+  244  ls
+  245  cd mycookbook
+  246  ls
+  247  cd ..
+  248  ls
+  249  cd starter
+  250  ls
+  251  cp -R files /chef-repo/cookbooks/mycookbook
+  252  ls
+  253  cd files
+  254  ls
+  255  cd default
+  256  ls
+  257  cat sample.txt
+  258  cd ..
+  259  ls
+  260  cd ..
+  261  ls
+  262  cd .
+  263  ls
+  264  cd ..
+  265  ls
+  266  cd mycookbook
+  267  ls
+  268  mkdir files
+  269  cd files
+  270  mkdir default
+  271  ls
+  272  vi index.php
+  273  cd ~/chef-repo
+  274  ls
+  275  knife cookbook upload mycookbook
+  276  ip a
+  277  ls
+  278  cd cookbooks
+  279  ls
+  280  cd mycookbook
+  281  ls
+  282  cd files
+  283  ls
+  284  cd default
+  285  ls
+  286  vi index.php
+  287  ls
+  288  cd ..
+  289  ls
+  290  rm index.php
+  291  ls
+  292  cd ~/chef-repo
+  293  ls
+  294  knife cookbook upload mycookbook
+  295  ls
+  296  cd cookbooks/mycookbook/files#
+  297  ls
+  298  cd coobooks
+  299  ls
+  300  history
+  301  vi cookbooks/mycookbook/recipes/default.rb
+  302  knife cookbook upload mycookbook
+  303  cd /etc
+  304  ls
+  305  cd apache2
+  306  ls
+  307  ls apache2*
+  308  ls
+  309  exit
+  310  history
+  311  cat cookbooks/mycookbook/recipes/default.rb
+  312  ls
+  313  cd chef-repo
+  314  cat cookbooks/mycookbook/recipes/default.rb
+  315  ls
+  316  cd cookbooks
+  317  ls
+  318  cd mycookbook
+  319  ls
+  320  cd files
+  321  ls
+  322  cd default
+  323  ls
+  324  cat index.php
+  325  ls
+  326  vi index.php
+  327  cd ~/chef-repo
+  328  knife cookbook upload mycookbook
+  329  exit
+  330  cd chef-repo
+  331  ls
+  332  cd cookbooks
+  333  ls
+  334  cd mkdir recipes
+  335  cd ..
+  336  mkdir recipes
+  337  vi remotefile.rb
+  338  chef-apply remotefile.rb
+  339  vi remotefile.rb
+  340  chef-apply remotefile.rb
+  341  ls -lrta
+  342  cp remotefile.rb recipes
+  343  cd recipes
+  344  ls
+  345  chef-apply remotefile.rb
+  346  ls -lrta
+  347  vi variable.rb
+  348  cat variable.rb
+  349  vi variable.rb
+  350  chef-apply variable.rb -W
+  351  ls -lrta
+  352  chef-apply variable.rb
+  353  elinks
+  354  clear
+  355  ls -lrta
+  356  cd ..
+  357  ls
+  358  rm remotefile.rb
+  359  cd recipes
+  360  ls
+  361  ls -lrta
+  362  cd /tmp
+  363  ls
+  364  cd ~/chef-repo
+  365  ls
+  366  cd recipes
+  367  ls -lrta
+  368  vi remotefile.rb
+  369  cd /tmp
+  370  ls
+  371  rm -f *.gz
+  372  cd ~/chef-repo
+  373  ls
+  374  cd recipes
+  375  ls
+  376  chef-apply remotefile.rb -W
+  377  cd /tmp
+  378  ls
+  379  cd ~/chef-repo
+  380  cd recipes
+  381  ls
+  382  chef-apply remotefile.rb
+  383  cd /tmp
+  384  ls
+  385  cd ~/chef-repo
+  386  ls
+  387  cd recipes
+  388  ls
+  389  vi if.rb
+  390  cat if.rb
+  391  chef-apply if.rb -W
+  392  cat if.rb
+  393  clear
+  394  cat if.rb
+  395  ohai
+  396  cat if.rb
+  397  clear
+  398  chef-apply if.rb
+  399  vi if.rb
+  400  chef-apply if.rb
+  401  ls
+  402  clear
+  403  ls
+  404  cat if.rb
+  405  vi notif.rb
+  406  clear
+  407  cat notif.rb
+  408  vi notif.rb
+  409  cat notif.rb
+  410  clear
+  411  cat notif.rb
+  412  chef-apply notif.rb -W
+  413  chef-apply notif.rb
+  414  cp notif.rb onlyif.rb
+  415  vi onlyif.rb
+  416  chef-apply notif.rb
+  417  chef-apply onlyif.rb
+  418  vi onlyif.rb
+  419  clear
+  420  chef-apply onlyif.rb
+  421  ls
+  422  touch loop.rb
+  423  vi loop.rb
+  424  clear
+  425  cat loop.rb
+  426  vi loop.rb
+  427  exit
+  428  cd ~/chef-repo
+  429  ls
+  430  cd recipes
+  431  vi pkgs.rb
+  432  chef-apply pkgs.rb -W
+  433  chef-apply pkgs.rb
+  434  exit
+  435  cd chef-repo
+  436  ls
+  437  cd cookbooks
+  438  ls
+  439  mkdir sample
+  440  cd sample
+  441  ls
+  442  cd ..
+  443  ls
+  444  rmdir sample
+  445  ls
+  446  cp - R mycookbook sample
+  447  cp -R mycookbook sample
+  448  cd sample
+  449  ls
+  450  rm - R files
+  451  rm -R files
+  452  ls
+  453  rm index.php
+  454  ls
+  455  cd recipes
+  456  ls
+  457  rm default*.rb
+  458  vi default.rb
+  459  ls
+  460  cd ..
+  461  ls
+  462  cd .
+  463  cd ..
+  464  ls
+  465  knife cookbook upload sample
+  466  exit
+  467  cd chef-repo
+  468  ls
+  469  cd cookbooks
+  470  ls
+  471  mkdir project
+  472  cd project
+  473  cd ..
+  474  rmdir project
+  475  ls
+  476  cp -R mycookbook project
+  477  cd project
+  478  ls
+  479  cd recipes
+  480  ls
+  481  vi default.rb
+  482  ls
+  483  vi default1.rb
+  484  mv default.rb default2.rb
+  485  mv default1.rb default.rb
+  486  ls
+  487  vi default.rb
+  488  cd ..
+  489  ls
+  490  cd ..
+  491  ls
+  492  cd sample
+  493  ls
+  494  cd recipes
+  495  ls
+  496  cat default.rb
+  497  cd ..
+  498  ls
+  499  cp -R project
+  500  rmdir -R project
+  501  ls
+  502  rmdir project
+  503  rmdir -R project
+  504  rmdir-R project
+  505  rmdir project
+  506  rm -R project
+  507  ls
+  508  cd mycookbook
+  509  ls
+  510  cd ..
+  511  knife cookbook upload mycookbook
+  512  cd ..
+  513  ls
+  514  cd cookbooks
+  515  cd ..
+  516  ls
+  517  cd cookbooks
+  518  ls
+  519  cd sample
+  520  cd ..
+  521  ls
+  522  cd ..
+  523  knife cookbook delete apachebook
+  524  cd cookbooks
+  525  ls
+  526  cd mycookbook
+  527  ls
+  528  cd recipes
+  529  ls
+  530  cat default.rb
+  531  cat default2.rb
+  532  cat default1.rb
+  533  ls
+  534  cd ..
+  535  ls
+  536  cd ..
+  537  ls
+  538  cd sample
+  539  ls
+  540  cd recipes
+  541  ls
+  542  rm default.rb
+  543  vi default.rb
+  544  ls
+  545  git init
+  546  git clone https://github.com/opthakur/chef-wordpress.git
+  547  ls
+  548  cd chef-wordpress
+  549  ls
+  550  cd recipes
+  551  ls
+  552  vi default.rb
+  553  ls
+  554  cd ..
+  555  ls
+  556  cd ..
+  557  ls
+  558  cd ..
+  559  ls
+  560  cd recipes
+  561  ls
+  562  cp chef-wordpress/recipes/default.rb default.rb
+  563  ls
+  564  rm -R chef-wordpress
+  565  ls
+  566  cd ..
+  567  ls
+  568  vi metadata.rb
+  569  ls
+  570  cd ..
+  571  ls
+  572  cd ..
+  573  ls
+  574  knife cookbook upload sample
+  575  ls
+  576  cd cookbooks
+  577  ls
+  578  cd sample
+  579  ls
+  580  cd recipes
+  581  ls
+  582  vi default.rb
+  583  ls
+  584  vi default.rb
+  585  cat default.rb
+  586  ls
+  587  mv default.rb default1.rb
+  588  ls
+  589  vi default.rb
+  590  cd ..
+  591  ls
+  592  cd ..
+  593  ls
+  594  cd ..
+  595  knife cookbook upload sample
+  596  vi cookbooks/sample/recipes/default.rb
+  597  cp cookbooks/sample/recipes/default.rb cookbooks/sample/recipes/default_v1.rb
+  598  vi cookbooks/sample/recipes/default.rb
+  599  knife cookbook upload sample
+  600  exit
+  601  ls
+  602  cd chef-repo
+  603  clear
+  604  ls cookbooks/sample/recipes/
+  605  vi default.rb
+  606  ls cookbooks/sample/recipes/
+  607  cat cookbooks/sample/recipes/default.rb
+  608  cat cookbooks/sample/recipes/default1.rb
+  609  cat cookbooks/sample/recipes/default.rb
+  610  clear
+  611  cat cookbooks/sample/recipes/default.rb
+  612  mv cookbooks/sample/recipes/default.rb cookbooks/sample/recipes/defaultv2.rb
+  613  vi cookbooks/sample/recipes/default.rb
+  614  clear
+  615  vi cookbooks/sample/recipes/defaultv2.rb
+  616  vi cookbooks/sample/recipes/defaultv.rb
+  617  knife cookbook upload sample
+  618  vi cookbooks/sample/recipes/defaultv.rb
+  619  mv cookbooks/sample/recipes/defaultv.rb cookbooks/sample/recipes/default.rb
+  620  knife cookbook upload sample
+  621  ls
+  622  ls -lrta
+  623  cd mycookbooks
+  624  ls
+  625  cd cookbooks
+  626  ls
+  627  cd ..
+  628  git remote -v
+  629  git status
+  630  ls -lrta
+  631  ls
+  632  cd cookbooks
+  633  ls
+  634  cd sample
+  635  ls
+  636  cd recipes
+  637  ls
+  638  ls -lrta
+  639  git remote -v
+  640  history
+  641  ls
+  642  vi default1.rb
+  643  ls
+  644  rm default.rb
+  645  mv default1.rb default.rb
+  646  cd .
+  647  cd ..
+  648  ls
+  649  knife cookbook upload sample
+  650  vi cookbooks/sample/recipes/defaultv.rb
+  651  vi cookbooks/sample/recipes/default.rb
+  652  knife cookbook upload sample
+  653  ip a
+  654  cat cookbooks/sample/recipes/default.rb
+  655  cd /var/www/
+  656  ls
+  657  cd html
+  658  ls
+  659  cd ~/chef-repo
+  660  ls
+  661  knife cookbook upload sample
+  662  vi cookbooks/sample/recipes/default.rb
+  663  exit
+  664  pwd
+  665  cd chef-repo
+  666  cd cookbooks
+  667  ls
+  668  cd sample
+  669  ls
+  670  cd recipes
+  671  vi default.rb
+  672  cd ..
+  673  ls
+  674  cd ..
+  675  knife cookbook create sample1
+  676  exit
+  677  cd chef-repo
+  678  ls
+  679  cd cookbooks
+  680  ls
+  681  cd sample
+  682  ls
+  683  cd recipes
+  684  ls -lrta
+  685  git remote -v
+  686  ls
+  687  la -lrta
+  688  git branch
+  689  git status
+  690  git fetch
+  691  history
+  692  git pull
+  693  history > log.txt
