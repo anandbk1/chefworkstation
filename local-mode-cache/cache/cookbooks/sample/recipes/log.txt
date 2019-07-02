@@ -88,7 +88,6 @@
    88  ls
    89  rm -f default.rb
    90  touch default.rb
-   90    ls
    91  vi default.rb
    92  cat default.rb
    93  cd ~/chef-repo
