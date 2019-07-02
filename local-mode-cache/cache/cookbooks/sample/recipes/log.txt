@@ -1,5 +1,5 @@
     1  sudo curl -sSL https://gitlab.com/roybhaskar9/devops/raw/master/coding/chef/setupchefws.sh | sh
-    2  ls
+    2  ls 
     3  cd chef-repo
     4  knife bootstrap 192.168.33.11 -x vagrant -P vagrant --sudo -N node1
     5  exit
@@ -88,6 +88,7 @@
    88  ls
    89  rm -f default.rb
    90  touch default.rb
+   90    ls
    91  vi default.rb
    92  cat default.rb
    93  cd ~/chef-repo
